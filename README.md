@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Blog Application Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for a blog platform built with React, TypeScript, and Material-UI. The application allows users to create, view, and comment on blog posts.
 
-Currently, two official plugins are available:
+## Live Site
+[Visit the live site here](https://project-members-only-v2.glitch.me/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Backend
+The backend for this project can be found at: [Project Blog API Server-Side](https://github.com/mpapila/Project-Blog-API-Server-Side)
 
-## Expanding the ESLint configuration
+## Dependencies
+- React
+- TypeScript
+- Material-UI
+- React Router
+- TinyMCE (for rich text editor)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- User authentication (Login and Signup)
+- Create new blog posts with a rich text editor
+- View a list of blog posts
+- View detailed information for each post along with comments
+- Responsive and user-friendly interface
+- Floating action button for quick access to the new post creation page
 
-- Configure the top-level `parserOptions` property like this:
+## Pages
+- **Home**: Displays a list of all blog posts.
+- **Login**: Allows users to log in to their account.
+- **Signup**: Allows new users to create an account.
+- **PostDetail**: Displays detailed information about a single post, including comments.
+- **NewPost**: Allows authenticated users to create a new post.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Components
+- **Navbar**: Navigation bar with login/logout functionality.
+- **Footer**: Basic footer for the application.
+- **Loading**: Indicates loading state during data fetch.
+- **FloatingAddButton**: Floating action button to navigate to the new post creation page.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Project Structure
+- `src/components`: Contains reusable components like `FloatingAddButton`, `Loading`, and `Navbar`.
+- `src/pages`: Contains page components like `Home`, `Login`, `Signup`, `PostDetail`, and `NewPost`.
+- `src/App.tsx`: Main application component with routing setup.
+- `src/Router.tsx`: Defines the routes for the application.
+- `src/index.tsx`: Entry point of the application.
+- `src/type.ts`: Contains TypeScript types used in the application.
+
+## Author
+- Mehmet Papila © 2024 Mehmet Papila. All rights reserved.
