@@ -12,7 +12,7 @@ const NewPost = () => {
     const [errorMessage, setErrorMessage] = useState<string[]>([])
     const navigate = useNavigate()
     const apiUrl = import.meta.env.VITE_API_URL
-    const tinyApi = import.meta.env.REACT_APP_TINY_MCE_API_KEY
+    const tinyApi = import.meta.env.VITE_TINY_MCE_API_KEY
     const handleContentChange = (newContent: string) => {
         setContent(newContent)
     }
