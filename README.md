@@ -3,7 +3,7 @@
 This is the frontend application for a blog platform built with React, TypeScript, and Material-UI. The application allows users to create, view, and comment on blog posts.
 
 ## Live Site
-[Visit the live site here](https://project-members-only-v2.glitch.me/)
+[Visit the live site here](https://project-blog-api-client-side.netlify.app/)
 
 ## Backend
 The backend for this project can be found at: [Project Blog API Server-Side](https://github.com/mpapila/Project-Blog-API-Server-Side)
