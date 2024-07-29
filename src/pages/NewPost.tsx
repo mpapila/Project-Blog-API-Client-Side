@@ -12,6 +12,7 @@ const NewPost = () => {
     const [errorMessage, setErrorMessage] = useState<string[]>([])
     const navigate = useNavigate()
     const apiUrl = import.meta.env.VITE_API_URL
+    const tinyApi = import.meta.env.TINYMCE_API_KEY
     const handleContentChange = (newContent: string) => {
         setContent(newContent)
     }
@@ -85,7 +86,7 @@ const NewPost = () => {
                             autoFocus
                         />
                         <Editor
-                            apiKey='l0ob1dqc71ravril1ymu6qb94jfmx8k8mrwvogor7rvdd5ko'
+                            apiKey={`${tinyApi}`}
                             value={content}
                             init={{
                                 branding: false,
